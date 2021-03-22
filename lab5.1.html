@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        #img{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="hideShow()">
+        Show/Hide
+    </button>
+    <img id="img" src="20191015_102948.jpg">
+
+    
+
+    <script>
+        function hideShow(){
+            var x  = document.getElementById("img");
+            if(x.style.visibility === 'hidden'){
+                x.style.visibility = "visible";
+            }
+            else{
+                x.style.visibility = "hidden";
+
+            }
+        }
+        
+    </script>
+</body>
+</html>
